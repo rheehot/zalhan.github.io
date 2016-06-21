@@ -1,0 +1,3 @@
+name: Zalhan
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json"]
