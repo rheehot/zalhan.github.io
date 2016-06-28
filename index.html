@@ -12,23 +12,25 @@ YAML로 쓰인 머릿말은 liquid templete을 사용하여 다른 파일에서 
 
 
 <div class = "home-wrap">
-
 <!-- include(파일경로) + html파일  -->
 	{% include header.html %}
+	<div class = "home-block">
+		
+		<div class = "home-start">
+			{% include section-about.html %}
+		</div>
 
-	<div class="home-sections">
-
-		{% include section-about.html %}
-		{% include section-youtube.html %}
-		{% include section-mentoring.html %}
-		{% include section-articles.html %}
-		{% include section-vine.html %}
-		{% include section-design.html %}
-		{% include section-notes.html %}
-		{% include section-footer.html %}
-
-	</div>
-
+		<div class = "home-sections">
+			{% include section-youtube.html %}
+			{% include section-mentoring.html %}
+			{% include section-articles.html %}
+			{% include section-vine.html %}
+			{% include section-design.html %}
+			{% include section-notes.html %}
+			{% include section-footer.html %}		
+		</div>
+	
+	</div>	
 
 </div>
 

@@ -484,7 +484,7 @@ body {
 
 .home-wrap header {
   width: 135px;
-  background: white;
+  background: #F9F9F9;
   padding: 30px 0; }
   .home-wrap header .header-position {
     position: fixed;
@@ -612,18 +612,9 @@ body {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url(../img/um.png);
-  background-position: center bottom;
-  background-size: cover; }
-  section.about h2 {
-    color: #3f3f42;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 1;
-    margin-left: -128px;
-    margin-top: 0; }
-  section.about .home-lead {
-    padding-bottom: 150px; }
+  background-image: url(../img/about15.png);
+  background-position: center;
+  height: 1000px; }
 
 @media (max-width: 640px) {
   section.about h2, section.about .home-lead {
@@ -632,8 +623,7 @@ section.about {
     max-width: 300px; } }
 
 section.youtube {
-  background-image: url(../img/youtube-bg.gif);
-  background-color: #e20a0a;
+  background-image: url(../img/article-bg.jpg);
   background-position: center;
   background-size: cover;
   color: white; }
@@ -978,6 +968,16 @@ section.notes {
   @media (max-width: 775px) {
     .home-wrap {
       display: block; } }
+
+.home-block {
+  overflow: hidden;
+  width: 100%; }
+
+.home-start {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0px; }
 
 .home-sections {
   -webkit-box-flex: 1;
