@@ -683,7 +683,7 @@ section.mentoring {
   section.mentoring .home-cta {
     color: #2cb4db; }
   section.mentoring .home-lead {
-    margin-top: 350px; }
+    margin-top: 450px; }
   section.mentoring .faces {
     list-style: none;
     margin: -50px 0;
@@ -734,17 +734,17 @@ section.mentoring {
 @media (max-width: 640px) {
   section.mentoring .faces {
     margin: 0;
-    width: 805px;
-    top: 230px;
+    width: 1610px;
+    top: 220px;
     left: 0px; }
   section.mentoring .face {
     display: inline-block;
-    margin-right: 35px; }
+    margin-right: 30px; }
     section.mentoring .face.back-btn {
       display: inline-block; }
   section.mentoring .bubble {
-    bottom: 100px;
-    left: 0px;
+    bottom: 130px;
+    left: 22px;
     box-sizing: border-box;
     margin-left: 0px; } }
 
