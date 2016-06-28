@@ -420,13 +420,13 @@ a {
     color: #333333; }
 
 ::-moz-selection {
-  background: #A1B6FF; }
+  background: none; }
 
 ::selection {
-  background: #A1B6FF; }
+  background: none; }
 
 ::-moz-selection {
-  background: #A1B6FF; }
+  background: none; }
 
 img::-moz-selection {
   background: transparent; }
@@ -438,7 +438,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #A1B6FF; }
+  -webkit-tap-highlight-color: none; }
 
 html,
 body {
