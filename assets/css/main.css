@@ -626,7 +626,7 @@ section.youtube {
   background-image: url(../img/article-bg.jpg);
   background-position: center;
   background-size: cover;
-  color: white; }
+  color: black; }
   section.youtube .home-cta {
     color: #e20a0a; }
   section.youtube .flex-video {
@@ -683,7 +683,7 @@ section.mentoring {
   section.mentoring .home-cta {
     color: #2cb4db; }
   section.mentoring .home-lead {
-    margin-top: 250px; }
+    margin-top: 350px; }
   section.mentoring .faces {
     list-style: none;
     margin: -50px 0;
@@ -696,12 +696,11 @@ section.mentoring {
     section.mentoring .faces.launched {
       top: 0px; }
   section.mentoring .face {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 200px;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
-    margin-bottom: 35px;
+    margin: 20px 10px 20px 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     position: relative;
     cursor: pointer; }
