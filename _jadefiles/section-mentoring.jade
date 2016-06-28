@@ -1,0 +1,27 @@
+mixin face(face, words, name)
+	li.face(style="background-image: url(#{face});")
+		.bubble
+			p #{words}
+			cite - #{name}
+
+section.mentoring
+	.flex.flex--center
+		.col-1
+			ul.faces
+				+face("/assets/img/testimonial-avatars/andrew.jpg","He provided me with a clear perspective of how I could utilise and manage my time effectively to get most out of my personal projects. But most importantly Travis eased some of the concerns I once had about landing a job in the Web Design industry.","andrew")
+
+				+face("/assets/img/testimonial-avatars/andrew.jpg","Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.","andrew")
+
+				+face("/assets/img/testimonial-avatars/andrew.jpg","Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.","andrew")
+				
+				+face("/assets/img/testimonial-avatars/andrew.jpg","Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.","andrew")
+				
+				+face("/assets/img/testimonial-avatars/andrew.jpg","Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.","andrew")
+				
+				+face("/assets/img/testimonial-avatars/andrew.jpg","Travis talked me through the necessary steps I needed to take to land a Designer/Front End Developer role with a digital agency. We discussed what I needed to have in my portfolio, as well as what I needed to be doing on a daily basis to make my dream a reality.","andrew")
+				li.back-btn.face
+
+
+		.col-1
+			p.home-lead.outdented ...Mentoring people like you...
+			a(href="").home-cta Schedule a Call

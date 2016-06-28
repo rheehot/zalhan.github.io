@@ -1,18 +1,35 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: zalhan
 ---
 
+<!--  Jekyll 은 작업이 필요한 파일을 찾아 사이트 내부를 이리저리 돌아다님 작업 대상은 YAML 머리말을 가진 모든 파일
+
+YAML양식으로써 머릿말로 쓰임
+layout: default는 layout폴더에있는 html파일을 사용함.	
+
+YAML로 쓰인 머릿말은 liquid templete을 사용하여 다른 파일에서 {page.title}로 불러올 수 있다. -->
 
 
+<div class = "home-wrap">
 
-{% include hello.html %}
+<!-- include(파일경로) + html파일  -->
+	{% include header.html %}
 
-<!-- <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div> -->
+	<div class="home-sections">
+
+		{% include section-about.html %}
+		{% include section-youtube.html %}
+		{% include section-mentoring.html %}
+		{% include section-articles.html %}
+		{% include section-vine.html %}
+		{% include section-design.html %}
+		{% include section-notes.html %}
+		{% include section-footer.html %}
+
+	</div>
+
+
+</div>
+
+

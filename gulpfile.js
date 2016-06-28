@@ -15,7 +15,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn( 'jekyll' , ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -28,6 +28,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
 /**
  * Wait for jekyll-build, then launch the Server
+ * 브라우저 새로고침
  */
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
@@ -59,21 +60,22 @@ gulp.task('sass', function () {
 */
 
 gulp.task('jade', function(){
-    return gulp.src('_jadefiles/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('_includes'));
-
+  return gulp.src('_jadefiles/*.jade')
+  .pipe(jade())
+  .pipe(gulp.dest('_includes'));
 });
-
 
 
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
+ 개발 중에 리소스가 새로고침 되길 원한다면 `watch`로 등록해두면 된다.
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/js/**', ['jekyll-rebuild']);
     gulp.watch(['index.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch(['assets/js/**'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade',['jade']);
 });
 
@@ -82,16 +84,5 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
-
-
-
-
-
-
-
-
-
-
-
 
 
