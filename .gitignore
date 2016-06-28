@@ -33,3 +33,15 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+### Jekyll ###
+_site/
+.sass-cache/
+
+
+### Sass ###
+.sass-cache
+*.css.map
+
+assets/css/3-sections/header.sass
