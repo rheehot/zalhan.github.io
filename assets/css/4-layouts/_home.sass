@@ -1,13 +1,8 @@
 .home-wrap
 	display: flex
-	// 요소의 width값이 min-height보다 작아지는걸 방지함
-	// 100vom Hundert/ 최소값은 height의 1/100 값이다.
 	min-height: 100vh
+	overflow: hidden
 
-	//display는 기본적으로 inline속성
-	//inline은 옆으로 나열되기 때문에 메뉴바가 위로 올라가지 않음
-	//width가 775px이하로 내려가면 block속성이 적용되어
-	//메뉴바가 위로 올라가게 된다, 모바일 대응
 	@media (max-width: 775px)
 		display: block
 
@@ -37,18 +32,18 @@
 
 //column
 .col-1
-	//아......
-	//max-width: 300px
 	width: 300px
-	margin: 0 10px
+	margin: 0px
 	box-sizing: border-box
 
 .push-right
 	margin-left: 330px
 				
 .col-2
-	max-width: 620px
+	max-width: 640px
 	margin: 0 10px
+	box-sizing: border-box
+	width: 100%
 
 .col-50
 	width: 50%
@@ -84,9 +79,3 @@
 
 		&.outdented
 			text-indent: 0
-
-
-
-
-
-
