@@ -12,7 +12,7 @@ section.articles2
 		background: #3d96cb
 
 	.article-wrap
-		margin: -50px 0	
+		margin: 100px 0	
 		+clearfix
 
 	.article-thumb
@@ -25,16 +25,16 @@ section.articles2
 		position: relative
 		overflow: hidden
 		opacity: 0
-		transition: all 300ms ease-in-out
+		transition: all 200ms ease-in-out
 
 		&.is-visible
 			opacity: 1
 
 		&.is-emph
-      animation-name: tada
-      animation-duration: 1s
-      animation-fill-mode: both
-      z-index: 1
+			animation-name: flipInX
+			animation-duration: 1s
+			animation-fill-mode: both
+			backface-visibility: visible !important
 
 		&:after
 			content: ''
@@ -61,9 +61,9 @@ section.articles2
 		.date
 			font-style: italic	
 
-	.article-thumb:hover .article-meta
-		opacity: 1
-		transform: translate(0%, 0%) scale(1)
+	// .article-thumb:hover .article-meta
+	// 	opacity: 1
+	// 	transform: translate(0%, 0%) scale(1)
 
 
 	@media(max-width: 640px)
@@ -73,17 +73,25 @@ section.articles2
 
 	@media(max-width: 999px) and (min-width: 640px)
 		.article-thumb
-			width: 33.3%
+			width: 25%
 
 
-@keyframes tada 
-  from 
-    transform: scale3d(1, 1, 1)
-  10%, 20%
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
-  30%, 50%, 70%, 90%
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
-  40%, 60%, 80%
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
-  to
-    transform: scale3d(1, 1, 1)
+@keyframes flipInX 
+	from 
+		transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+		animation-timing-function: ease-in
+		opacity: 0
+
+	40% 
+		transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+		animation-timing-function: ease-in
+
+	60% 
+		transform: perspective(400px) rotate3d(1, 0, 0, 10deg)
+		opacity: 1
+
+	80% 
+		transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+
+	to 
+		transform: perspective(400px)

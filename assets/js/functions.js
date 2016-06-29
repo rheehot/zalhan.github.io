@@ -1,6 +1,6 @@
 $(function() {
 	mentoringBubbleClick();
-  setInterval(function(){articleTada()}, 2000);
+  setInterval(function(){articleTada()}, 1500);
   designBGStuff();
   mobileNav();
 });
@@ -30,6 +30,7 @@ function articleTada(){
   $('.article-thumb').eq(randNum).addClass('is-emph')
     .siblings().removeClass('is-emph');
 }
+
 
 function mentoringBubbleClick() {
   $('.face').on('click',function() {

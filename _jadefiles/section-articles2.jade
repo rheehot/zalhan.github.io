@@ -3,7 +3,7 @@ section.articles2#articles2
 		
 		.col-50.flex--center.order-first
 			.article-wrap
-				{% for post in site.posts limit: 16 %}
+				{% for post in site.posts limit: 8 %}
 				a(style="background-image: url(assets/img/posts/packages/{{post.thumbnail}})").article-thumb
 					.article-meta
 						.name {{post.title}}
