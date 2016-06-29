@@ -1,0 +1,18 @@
+section.articles2#articles2
+	.flex.flex--center
+		
+		.col-50.flex--center.order-first
+			.article-wrap
+				{% for post in site.posts limit: 16 %}
+				a(style="background-image: url(assets/img/posts/packages/{{post.thumbnail}})").article-thumb
+					.article-meta
+						.name {{post.title}}
+						.date {{post.date | date: "%b %d, %Y"}}
+				{% endfor %}			
+
+		//- 모바일로 변했을때 아래로 내려감
+		.col-50.flex.flex--center
+			.col-1
+				.desc-wrap
+					p.home-lead.outdented ...Writing and designing articles...
+					a(href="").home-cta Seee all Articles

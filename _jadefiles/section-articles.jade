@@ -4,7 +4,7 @@ section.articles#articles
 		.col-50
 			.article-wrap
 				{% for post in site.posts limit: 12 %}
-				a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
+				a(style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
 					.article-meta
 						.name {{post.title}}
 						.date {{post.date | date: "%b %d, %Y"}}
