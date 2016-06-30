@@ -98,7 +98,7 @@ function startMentoring() {
 
   var wScroll = $(window).scrollTop();
   //멘토링 페이지는 half에서 작동됨
-  if($('section.mentoring').offset().top - $(window).height()/2 < wScroll) {
+  if($('section.editorial').offset().top - $(window).height()/2 < wScroll) {
     if($(window).width() > 640) {
     $('.faces').addClass('launched');
       if(!$('.face').hasClass('has-bubble-open')){
