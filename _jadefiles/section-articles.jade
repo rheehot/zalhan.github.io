@@ -1,7 +1,13 @@
 section.articles#articles
 	.flex.flex--center
 		
-		.col-50
+		//- 모바일로 변했을때 아래로 내려감
+		.col-50.flex.flex--center.order-first
+			.col-1
+				.desc-wrap
+					p.home-lead.outdented designing articles with Table Tennis
+
+		.col-50.flex--center
 			.article-wrap
 				{% for post in site.posts limit: 12 %}
 				a(style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").article-thumb
@@ -9,11 +15,3 @@ section.articles#articles
 						.name {{post.title}}
 						.date {{post.date | date: "%b %d, %Y"}}
 				{% endfor %}
-		
-
-		//- 모바일로 변했을때 아래로 내려감
-		.col-50.flex.flex--center.order-first
-			.col-1
-				.desc-wrap
-					p.home-lead.outdented designing articles with Table Tennis
-					
