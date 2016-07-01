@@ -1041,6 +1041,13 @@ section.notes {
       padding-right: 30px;
       text-align: right;
       border-right: solid 2px white; }
+    @media (max-width: 640px) {
+      section.notes .col-1 {
+        padding: 0 10px; }
+        section.notes .col-1:first-child {
+          padding: 0 10px;
+          text-align: left;
+          border: none; } }
 
 .home-footer a {
   color: white;
