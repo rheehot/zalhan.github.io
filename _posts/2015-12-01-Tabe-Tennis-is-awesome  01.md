@@ -1,6 +1,6 @@
 ---
 layout: default
-title: New years eve is awesome
+title: Table Tennis is awesome
 thumbnail: post-16.png
 ---
 

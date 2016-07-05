@@ -506,7 +506,7 @@ body {
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
-    max-width: 135px;
+    max-width: 125px;
     background-image: url(/assets/img/logoh6.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -990,7 +990,8 @@ section.app {
   color: white; }
   section.app .home-lead {
     text-align: center;
-    font-size: 40px; }
+    font-size: 35px;
+    margin-bottom: 40px; }
   section.app .dribbble, section.app .behance {
     background-color: #ea4c89;
     background-image: url(/assets/img/design-bg.png);
@@ -1037,15 +1038,18 @@ section.notes {
   background-position: center;
   color: white;
   height: 300px; }
+  section.notes .home-lead {
+    margin-top: 10px; }
   section.notes .col-1 {
     padding-left: 30px;
     font-size: 18px;
-    font-style: italic;
-    line-height: 1.8; }
+    line-height: 1.8;
+    margin-top: 30px;
+    padding-right: 30px; }
     section.notes .col-1:first-child {
       padding-left: 0;
       padding-right: 30px;
-      text-align: right;
+      text-align: center;
       border-right: solid 2px white; }
     @media (max-width: 640px) {
       section.notes .col-1 {
