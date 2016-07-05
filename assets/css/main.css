@@ -752,6 +752,33 @@ section.editorial {
     box-sizing: border-box;
     margin-left: 0px; } }
 
+.home-sections .poster {
+  padding: 0px; }
+  .home-sections .poster section.poster {
+    color: white; }
+  .home-sections .poster .home-lead {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px; }
+  .home-sections .poster .poster1 {
+    background-image: url(/assets/img/lightl.png);
+    background-position: center;
+    padding: 100px 0; }
+  .home-sections .poster .poster2 {
+    background-image: url(/assets/img/right.png);
+    background-position: center;
+    padding: 100px 0; }
+  .home-sections .poster .home-cta {
+    font-size: 24px;
+    color: #ea4c89; }
+  .home-sections .poster .design-img-copy {
+    display: block;
+    width: calc(100% - 14px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px; }
+  .home-sections .poster .cf {
+    clear: both; }
+
 section.articles {
   background-image: url(../img/article-bg.jpg);
   background-repeat: repeat; }
