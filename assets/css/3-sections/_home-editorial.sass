@@ -1,6 +1,6 @@
 section.editorial
 	background:
-		image: url(../img/boog-bg.png)
+		// image: url(../img/bgb.png)
 		size: cover
 		position: center
 	color: black
@@ -10,17 +10,23 @@ section.editorial
 		color: #2cb4db
 
 	.home-lead
-		margin-top: 400px
+		margin-top: 450px
+		margin-left: 220px
 
+		@media (max-width: 640px)
+			margin-top: 335px
+			margin-left: -225px
+	.outdented
+		width: 800px
 	.faces
 		list-style: none
-		margin: -50px 0
-		margin-left: -50px
+		margin: -20px 0
+		margin-left: -130px
 		height: calc(100% + 100px)
 		padding: 0
 		position: relative
 		top: 800px
-		transition: all 0.3s ease-in-out 
+		transition: all 0.3s ease-in-out
 
 		&.launched
 			top: 0px
@@ -87,4 +93,4 @@ section.editorial
       left: 22px
       box-sizing: border-box
       margin-left: 0px
-    	
+		
