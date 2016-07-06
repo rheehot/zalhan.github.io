@@ -4,13 +4,16 @@ mixin design-img(img, color)
 
 section.app2#app2
 	.flex.flex--center
-		.col-50.flex.flex--center.dribbble(data-orig-color="#ea4c89")
-			.col-1
-				img(src="assets/img/ip.jpg").design-img-copy
-				.cf
-
+		
 		.col-50.flex.flex--center
 			.col-1
 				.desc-wrap
 					p.home-lead.outdented App Design	
 				.cf
+
+		.col-50.flex.flex--center.dribbble.order-first(data-orig-color="#ea4c89")
+			.col-1
+				img(src="assets/img/iphone.png").design-img-copy
+				.cf
+
+		

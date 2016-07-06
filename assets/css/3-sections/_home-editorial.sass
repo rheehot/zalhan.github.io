@@ -6,18 +6,44 @@ section.editorial
 	color: black
 	overflow: hidden
 
+	.desc-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 400px
+
+		@media (max-width: 640px)
+			justify-content: center		
+			margin: auto
+
 	.home-cta
 		color: #2cb4db
 
 	.home-lead
 		margin-top: 450px
-		margin-left: 220px
+		margin-left: 70px
+		
+	
+	// 웹에서 모바일로 변할때 hidden
+	.outdented
+		width: 800px
 
 		@media (max-width: 640px)
 			margin-top: 335px
-			margin-left: -225px
-	.outdented
+			margin-left: 0px
+			visibility: hidden	
+
+	// 모바일에서 글씨가 위로
+	.outdented2
 		width: 800px
+		visibility: hidden
+
+		@media (max-width: 640px)
+			margin-top: 60px
+			margin-bottom: 100px
+			margin-left: 0px		
+			visibility: inherit			
+
 	.faces
 		list-style: none
 		margin: -20px 0
