@@ -1113,7 +1113,7 @@ section.icon {
     -webkit-transition: background-color 150ms ease-in-out;
             transition: background-color 150ms ease-in-out; }
     section.icon .dribbble.behance, section.icon .behance.behance {
-      background-color: #F6F6F6; }
+      background-color: #F9F9F9; }
       section.icon .dribbble.behance .home-cta, section.icon .behance.behance .home-cta {
         color: #1769ff; }
   section.icon .home-cta {
@@ -1245,15 +1245,9 @@ section.notes {
     margin-top: 100px; }
   section.notes .col-11 {
     width: 350px;
-    padding-left: 30px;
     margin: 200px 0px 70px 40px;
-    font-size: 14px;
-    line-height: 1.8;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-right: 30px;
-    color: black; }
+    padding-left: 30px; }
     @media (max-width: 640px) {
       section.notes .col-11 {
         -webkit-box-pack: center;
@@ -1268,20 +1262,22 @@ section.notes {
                 justify-content: center;
         padding: 0; } }
   section.notes .col-1 {
-    width: 400px;
+    width: 390px;
     padding-left: 30px;
-    margin: 160px 0px 70px 40px;
-    font-size: 14px;
+    margin: 130px 0px 70px 40px;
+    font-size: 16px;
     line-height: 1.8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding-right: 30px;
     color: black; }
+    section.notes .col-1 p {
+      margin: 20px 0 20px 0; }
     section.notes .col-1:first-child {
-      padding-left: 50px;
+      padding-left: 30px;
       padding-right: 60px;
-      text-align: left;
+      text-align: justify;
       border-left: solid 2px gray; }
     @media (max-width: 640px) {
       section.notes .col-1 {
@@ -1300,7 +1296,7 @@ section.notes {
         padding: 0; } }
     @media (max-width: 540px) {
       section.notes .col-1 {
-        width: 450px;
+        width: 430px;
         margin-top: 80px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -1308,7 +1304,7 @@ section.notes {
         padding: 0; } }
     @media (max-width: 440px) {
       section.notes .col-1 {
-        width: 350px;
+        width: 320px;
         margin-top: 80px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
