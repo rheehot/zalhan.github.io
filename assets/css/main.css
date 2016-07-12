@@ -825,8 +825,7 @@ section.editorial {
           padding: 0px 30px 0px; } }
   .home-sections .poster .home-lead {
     text-align: center;
-    font-size: 35px;
-    margin-top: 120px; }
+    font-size: 35px; }
   .home-sections .poster .poster1 {
     background-color: #F9F9F9;
     background-position: center;
@@ -834,7 +833,7 @@ section.editorial {
     padding: 100px 0; }
     @media (max-width: 640px) {
       .home-sections .poster .poster1 {
-        padding: 10px 0; }
+        padding: 100px 0 0 0; }
         .home-sections .poster .poster1 p {
           margin-bottom: 0; } }
   .home-sections .poster .poster2 {
