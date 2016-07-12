@@ -3,6 +3,7 @@ $(function() {
   setInterval(function(){articleTada()}, 1500);
   designBGStuff();
   mobileNav();
+  appChange();
 });
 
 
@@ -11,6 +12,20 @@ function mobileNav() {
     var status = $(this).hasClass('is-open');
     if(status){ $('.mobile-nav-toggle, .mobile-nav').removeClass('is-open'); }
     else { $('.mobile-nav-toggle, .mobile-nav').addClass('is-open'); }
+  });
+}
+
+
+function appChange() {
+  $('img').on({
+    'click': function() {
+         var src = ($(this).attr('src') === 'assets/img/gold00.png')
+            ? 'assets/img/gold01.png'
+            : 'assets/img/gold00.png'
+            //? 'assets/img/gold03.png'
+            // : 'assets/img/gold00.png';
+         $(this).attr('src', src);
+     }
   });
 }
 
