@@ -615,7 +615,7 @@ body {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url(../img/about.png);
+  background-image: url(../img/about2.png);
   background-position: center;
   background-size: cover;
   height: 1200px; }
@@ -1375,7 +1375,7 @@ section.notes {
     width: 390px;
     padding-left: 30px;
     margin: 130px 0px 70px 40px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
