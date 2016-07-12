@@ -807,6 +807,22 @@ section.editorial {
   padding: 0px; }
   .home-sections .poster section.poster {
     color: white; }
+  .home-sections .poster .col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 640px) {
+      .home-sections .poster .col-1 {
+        height: auto;
+        padding: 5px; }
+        .home-sections .poster .col-1:last-child {
+          padding: 0px 30px 0px; } }
   .home-sections .poster .home-lead {
     text-align: center;
     font-size: 35px;
@@ -818,7 +834,9 @@ section.editorial {
     padding: 100px 0; }
     @media (max-width: 640px) {
       .home-sections .poster .poster1 {
-        display: none; } }
+        padding: 10px 0; }
+        .home-sections .poster .poster1 p {
+          margin-bottom: 0; } }
   .home-sections .poster .poster2 {
     background-color: #F9F9F9;
     background-position: center;
@@ -836,6 +854,9 @@ section.editorial {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     margin: 5px;
     float: left; }
+    @media (max-width: 640px) {
+      .home-sections .poster .design-img-copy {
+        width: 55%; } }
   .home-sections .poster .cf {
     clear: both; }
 
@@ -983,7 +1004,8 @@ section.package {
       section.package .col-1 {
         height: auto;
         display: block;
-        padding: 30px 30px; }
+        padding: 30px 30px;
+        margin-top: 100px; }
         section.package .col-1:last-child {
           padding: 0px 30px 50px; } }
   section.package .home-cta {
@@ -1000,6 +1022,9 @@ section.package {
       clear: both;
       content: "";
       display: table; }
+    @media (max-width: 640px) {
+      section.package .article-wrap {
+        margin: 0px; } }
   section.package .article-thumb {
     display: block;
     background-size: cover;
@@ -1124,7 +1149,7 @@ section.icon {
         display: block;
         padding: 30px 30px; }
         section.icon .col-1:last-child {
-          padding: 0px 30px 50px; } }
+          padding: 0px 30px 0px; } }
   section.icon .col-10 {
     width: 550px;
     margin: 120px 0px 70px 40px;
@@ -1179,32 +1204,45 @@ section.icon {
             transition: transform 150ms ease-in-out; }
     @media (max-width: 1200px) {
       section.icon .design-img-link {
-        width: 15%; } }
+        width: 15%;
+        padding: 0px; } }
     @media (max-width: 985px) {
       section.icon .design-img-link {
-        width: 20%; } }
+        width: 20%;
+        padding: 0px; } }
     @media (max-width: 640px) {
       section.icon .design-img-link {
-        width: 17%; } }
+        width: 17%;
+        padding: 0px; } }
     @media (max-width: 560px) {
       section.icon .design-img-link {
-        width: 16%; } }
+        width: 16%;
+        padding: 0px; } }
     @media (max-width: 500px) {
       section.icon .design-img-link {
-        width: 15%; } }
+        width: 15%;
+        padding: 0px; } }
     @media (max-width: 435px) {
       section.icon .design-img-link {
-        width: 12%; } }
+        width: 22%;
+        padding: 0px; } }
+    @media (max-width: 410px) {
+      section.icon .design-img-link {
+        width: 24%;
+        padding: 0px; } }
     @media (max-width: 375px) {
       section.icon .design-img-link {
-        width: 19%; } }
+        width: 22%;
+        padding: 0px; } }
     @media (max-width: 360px) {
       section.icon .design-img-link {
-        width: 10%; } }
+        width: 10%;
+        padding: 0px; } }
     @media (max-width: 320px) {
       section.icon .design-img-link {
-        width: 17%;
-        height: 50px; } }
+        width: 20%;
+        height: 50px;
+        padding: 0px; } }
     section.icon .design-img-link:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
@@ -1345,7 +1383,8 @@ section.notes {
     padding-right: 30px;
     color: black; }
     section.notes .col-1 p {
-      margin: 20px 0 20px 0; }
+      margin: 20px 0 20px 0;
+      color: #4C4C4C; }
     section.notes .col-1:first-child {
       padding-left: 30px;
       padding-right: 60px;
