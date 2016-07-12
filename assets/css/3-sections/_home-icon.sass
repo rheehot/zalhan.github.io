@@ -6,11 +6,23 @@ section.icon
     // image: url(../img/bgb.png)
     position: center
     size: cover
-    color: #F6F6F6
+    color: #F9F9F9
   color: black
 
-
   .col-1
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media (max-width: 640px)
+      height: auto
+      display: block
+      padding: 30px 30px
+
+      &:last-child
+        padding: 0px 30px 50px
+
+  .col-10
     width: 550px
     margin: 120px 0px 70px 40px 
     justify-content: center
@@ -26,13 +38,22 @@ section.icon
       box-sizing: border-box
 
   .home-lead
-    padding-top: 208px
+    // padding-top: 250px
     text-align: center
     font-size: 30px
     margin-right: 0px
 
     @media (max-width: 640px)
       padding-top: 120px
+
+  // .home-explain
+  //   text-align: center
+  //   font-size: 15px
+  //   margin-bottom: 150px
+
+  //   @media(max-width: 640px)
+  //     margin-top: 100px
+  //     margin-bottom: 30px 
 
   .dribbble, .behance
     background:

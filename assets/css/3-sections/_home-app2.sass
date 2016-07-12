@@ -10,15 +10,37 @@ section.app2
   color: black
   overflow: hidden
 
+  .col-1
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media (max-width: 640px)
+      height: auto
+      display: block
+      padding: 30px 30px
+
+      &:last-child
+        padding: 0px 30px 50px
+
   .home-lead
     text-align: center
     font-size: 30px
-    margin-bottom: 150px
-    margin-top: 300px
+    // margin-bottom: 150px
+    // margin-top: 250px
 
     @media(max-width: 640px)
       margin-top: 100px
       margin-bottom: 30px
+
+  // .home-explain
+  //   text-align: center
+  //   font-size: 15px
+  //   // margin-bottom: 150px
+
+  //   @media(max-width: 640px)
+  //     margin-top: 100px
+  //     margin-bottom: 30px
 
   .dribbble, .behance
     background:

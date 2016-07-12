@@ -1,8 +1,9 @@
 section.articles
 	background:
-		image: url(../img/bgb.png)
+		// image: url(../img/bgb.png)
 		repeat: repeat
 		size: cover
+		color: #F9F9F9
 	padding: 100px 0px 100px 0px !important
 
 	.col-1
@@ -10,9 +11,33 @@ section.articles
 		align-items: center
 		justify-content: center
 
+		@media (max-width: 640px)
+			height: auto
+			display: block
+			padding: 30px 30px
+
+			&:last-child
+				padding: 0px 30px 50px
+
 	.home-cta
 		color: white
 		background: #3d96cb
+
+	.home-lead
+		margin-left: 45px
+
+		@media (max-width: 640px)
+			margin-left: 0px	
+
+	// .home-explain
+ //    text-align: center
+ //    font-size: 15px
+ //    // margin-bottom: 150px
+
+ //    @media(max-width: 640px)
+ //      margin-top: 100px
+ //      margin-bottom: 30px
+ //      padding: 0px 40px
 
 	.article-wrap
 		margin: -40px 0	
