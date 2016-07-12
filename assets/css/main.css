@@ -575,6 +575,7 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out; }
   .home-wrap .mobile-nav ul {
+    font-family: helvetica;
     list-style: none;
     margin: 0;
     padding: 0; }
@@ -642,7 +643,7 @@ section.youtube {
         -ms-flex-pack: center;
             justify-content: center; }
   section.youtube .home-lead {
-    margin-left: 23px; }
+    margin-left: 33px; }
     @media (max-width: 640px) {
       section.youtube .home-lead {
         margin-left: 0px; } }
@@ -751,6 +752,7 @@ section.editorial {
   section.editorial .face {
     height: 120px;
     width: 200px;
+    text-align: justify;
     background-size: cover;
     background-position: center;
     margin: 20px 10px 20px 0px;
@@ -769,7 +771,7 @@ section.editorial {
     bottom: 50%;
     margin-left: 10px;
     width: 290px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 40px 40px 40px 5px;
     border: 3px solid white;
@@ -1338,8 +1340,8 @@ section.notes {
   section.notes .home-lead {
     margin-top: 100px; }
   section.notes img {
-    padding: 20px;
-    width: 400px; }
+    padding: 20p0;
+    width: 300px; }
     @media (max-width: 985px) {
       section.notes img {
         -webkit-box-pack: center;
@@ -1388,7 +1390,7 @@ section.notes {
       padding-left: 30px;
       padding-right: 60px;
       text-align: justify;
-      border-left: solid 2px gray; }
+      border-left: solid 1px #B5B5B5; }
     @media (max-width: 640px) {
       section.notes .col-1 {
         padding: 0 10px; }
@@ -1448,15 +1450,18 @@ section.notes {
 
 .home-footer a {
   color: white;
-  background: #8F8F91;
+  background: #f6f6f6;
   display: block;
   width: 100%;
   line-height: 6;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 300;
+  color: gray;
   -webkit-transition: background 150ms ease-in-out;
-          transition: background 150ms ease-in-out; }
+          transition: background 150ms ease-in-out;
+  font-family: helvetica;
+  padding: 100px 0; }
   @media (max-width: 895px) {
     .home-footer a {
       font-size: 50px; } }
@@ -1467,7 +1472,8 @@ section.notes {
     .home-footer a {
       font-size: 20px; } }
   .home-footer a:hover {
-    background: #d08b41; }
+    background: #d79d5e;
+    color: white; }
 
 .home-wrap {
   display: -webkit-box;
