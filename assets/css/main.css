@@ -1340,7 +1340,7 @@ section.notes {
   section.notes .home-lead {
     margin-top: 100px; }
   section.notes img {
-    padding: 20p0;
+    padding: 200;
     width: 300px; }
     @media (max-width: 985px) {
       section.notes img {
@@ -1355,16 +1355,14 @@ section.notes {
                 justify-content: center;
         width: 270px; } }
   section.notes .col-11 {
-    width: 350px;
-    margin: 200px 0px 70px 40px;
-    padding-right: 30px;
-    padding-left: 30px; }
+    width: 300px;
+    margin: 200px 0px 70px 40px; }
     @media (max-width: 640px) {
       section.notes .col-11 {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin: 60px auto; } }
+        margin: auto; } }
     @media (max-width: 375px) {
       section.notes .col-11 {
         margin: 60px 0px 0px 5px;
