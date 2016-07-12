@@ -17,17 +17,24 @@ function mobileNav() {
 
 
 function appChange() {
-  $('img').on({
+  $('.img-change').on({
     'click': function() {
          var src = ($(this).attr('src') === 'assets/img/gold00.png')
             ? 'assets/img/gold01.png'
             : 'assets/img/gold00.png'
-            //? 'assets/img/gold03.png'
-            // : 'assets/img/gold00.png';
          $(this).attr('src', src);
      }
   });
 }
+
+
+// function appChange() {
+//   $('.img-change').on({
+//       'click': function() {
+//           $('.img-change').attr('src','assets/img/gold01.png')
+//         }
+//   });
+// }
 
 
 function designBGStuff() {
