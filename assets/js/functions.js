@@ -15,16 +15,22 @@ function mobileNav() {
   });
 }
 
+var arrayOfImage = ['assets/img/gold00.png', 'assets/img/gold01.png', 'assets/img/gold02.png', 'assets/img/gold03.png', 'assets/img/gold04.png'];
 
 function appChange() {
-  $('.img-change').on({
-    'click': function() {
-         var src = ($(this).attr('src') === 'assets/img/gold00.png')
-            ? 'assets/img/gold01.png'
-            : 'assets/img/gold00.png'
-         $(this).attr('src', src);
-     }
-  });
+ $('.img-change').on({
+   'click': function() {
+        var src = $(this).attr('src');
+        var idx = arrayOfImage.indexOf(src);
+        if (idx < arrayOfImage.length - 1) {
+          idx += 1;
+        } else {
+          idx = 0
+        }
+        src = arrayOfImage[idx];
+        $(this).attr('src', src);
+    }
+ });
 }
 
 
